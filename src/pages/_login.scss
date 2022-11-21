@@ -1,0 +1,51 @@
+.login-page-container {
+    background-image: url('./assets/bg-court.png');
+    min-height: 100vh;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+}
+.login-form {
+    max-width: 800px;
+    width: 100%;
+    display: grid;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    row-gap: 20px;
+    text-align: center;
+
+    & > * {
+        justify-self: center;
+        width: 100%;
+        
+    }
+    
+    & > input {
+        max-width: 50%;
+        min-height: 35px;
+        font-size: 20px;
+        padding: 2px;
+        text-align: center;
+        border: none;
+        box-shadow: 0 0 1px;
+
+        &:focus-visible {
+            outline: none;
+            box-shadow: 0 0 5px gray;
+        }
+    }
+
+    &__forgot-pass {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    &__login {
+
+    }
+}

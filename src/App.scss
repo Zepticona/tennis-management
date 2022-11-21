@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+$primary-blue: #4472CA;
+$primar-gray: #8D918B;
+$primary-orange: #F15025;
+
+a {
+    text-decoration: none;
+}
+.text-btn {
+    &:hover {
+        cursor: pointer;
+    }
+}
+.primary-btn {
+    max-width: 300px;
+    width: 100%;
+    min-height: 54px;
+    font-size: 24px;
+    padding: 8px;
+    border-radius: 12px;
+    text-align: center;
+    display: block;
+}
+
+.btn-blue {
+    background-color: $primary-blue;
+    color: white;
+}
+.btn-gray {
+    background-color: $primar-gray;
+    color: white
+}
+
+.btn--centered {
+    margin: 0 auto
+}
+
+@import "./pages/login";
+@import "./umpire/umpireLoginPage";
+@import "./umpire/matchSetupPage";

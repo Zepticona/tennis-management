@@ -1,0 +1,63 @@
+.umpire-page-container {
+    min-height: 100vh;
+    background-image: url('./assets/bg-court-umpire.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+}
+.umpire-page--dark {
+    background-color: black;
+}
+.umpire-page--lite {
+    background-color: $primary-orange;
+}
+.umpire-login-page-container {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 25px;
+}
+
+.umpire-login-form {
+    display: grid;
+    width: 100%;
+    row-gap: 20px;
+
+    & > div {
+        display: grid;
+        justify-items: left;
+        row-gap: 10px;
+
+        & > input {
+            width: 100%;
+            min-height: 50px;
+            border-radius: 12px;
+            background-color: $primar-gray;
+            border: 1px solid $primary-blue;
+            padding: 5px;
+            font-size: 16px;
+            color: white;
+
+            &:focus-visible {
+                outline: none;
+                box-shadow: 0 0 15px $primary-blue;
+            }
+        }
+    }
+
+    &__login {
+        justify-self: center;
+    }
+
+    
+}
+.umpire-menu {
+    position: relative;
+    top: 50vh;
+    transform: translateY(-50%);
+
+    & > * {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+}
