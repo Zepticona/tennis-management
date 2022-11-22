@@ -1,0 +1,228 @@
+.match {
+    display: grid;
+    grid-template-rows: repeat(8, min-content);
+    row-gap: 1rem;
+}
+.intervals {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 5px;
+
+        position: relative;
+
+        & .scaleToMax {
+           transform: scale(1);
+        }
+
+        & .scaleToMin {
+            transform: scale(0);
+        }
+    }
+}
+.match-btn--small {
+    width: 40px;
+    height: 40px;
+    font-size: 12px;
+}
+
+.match-btn--medium {
+    width: 140px;
+    height: 50px;
+    font-size: 24px;
+    font-weight: 700;
+}
+.match-btn--large {
+    width: 100%;
+    height: 5.5rem;
+}
+.match-btn--small, .match-btn--medium, .match-btn--large {
+    border-radius: 1rem;
+
+}
+.grey-btn {
+    background-color: #8D918B;
+    color: #fff;
+    border: 1px solid #000;
+
+    &:hover {
+        background-color: rgba(#8D918B, .9);
+    }
+}
+.selected-btn {
+    position: absolute;
+    background-color: #333;
+    color: $primary-orange;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 1.8rem;
+    font-weight: 700;
+
+    transform: scale(0);
+
+    transition: all .2s ease;
+}
+
+.duration {
+    background-color: rgba(#fff, .5);
+    border: 1px solid #4472CA;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #333;
+    font-weight: 700;
+    padding: 1rem;
+    text-transform: uppercase;
+
+    &__type {
+        font-size: 1.8rem;
+    }
+    &__time {
+        font-size: 2.4rem;
+    }
+}
+
+.game-score {
+    background-color: rgba(#fff, .5);
+    border: 1px solid #4472CA;
+    border-radius: 1rem;
+    width: 50%;
+    margin: 0 auto;
+
+    &__name {
+        font-size: 1.2rem;
+        margin-top: 5px;
+        margin-left: 5px;
+    }
+    &__scores {
+        font-size: 3.6rem;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+}
+
+.player-names {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+
+    
+    & .active-icon {
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        background-color: #F7FF58;
+        border-radius: 50%;
+        position: absolute;
+        top: 40%;
+    }
+
+    & .name {
+        width: 48%;
+        border-radius: 1rem;
+        font-size: 1.8rem;
+        padding: 10px 5px;
+        color: #4472CA;
+        background-color: #fff;
+        border: 1px solid #333;
+        position: relative;
+        overflow: visible;
+
+        &.active {
+            background-color: #4472CA;
+            color: #fff;
+        }
+
+        &.player1-active {    
+            left: -2rem;
+            top: 3rem;
+        }
+
+        &.player2-active {    
+            right: -2rem;
+            top: 3rem;
+            }            
+        
+    }
+
+}
+
+// .faults {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+
+//     &-btn {
+//         color: #4472CA;
+//         background-color: #fff;
+//         text-transform: uppercase;
+//         font-weight: 700;
+//         border: 1px solid #333;
+
+//         &--active {
+//             background-color: #4472CA;
+//             color: #fff;
+//         }
+//     }
+// }
+// .undo {
+//     &-btn {
+//         font-size: 2.4rem;
+//         text-transform: uppercase;
+//         color: #4472CA;
+//         background-color: #fff;
+//         height: 5.2rem;
+//         border: 1px solid #333;
+
+//         &--active {
+//             background-color: #4472CA;
+//             color: #fff;
+//         }
+//     }
+// }
+
+// .set-scores {
+//     background-color: rgba(#fff, .5);
+//     border-radius: 1rem;
+//     font-weight: 700;
+//     padding: 1rem;
+
+//     & .player-score {
+//         display: flex;
+//         justify-content: space-evenly;
+
+//         & .sets span {
+//             margin-right: 5px;
+//         }
+//     }
+// }
+// .pause-match {
+//     & .pause-btn {
+//         font-size: 2.4rem;
+
+//     }
+// }
+
+// .correction {
+//     & .correction-btn {
+//         font-size: 2.4rem;
+        
+//     }
+// }
+
+// .gameText {
+//     display: block;
+//     background: white;
+//     text-align: center;
+//     border-radius: 10px;
+//     padding: 15px;
+//     position: absolute;
+//     top: 370px;
+//     width: 312px;
+//     z-index: 10;
+// }

@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+
 
 function MatchSetupPage(props) {
     const [matchState, setMatchState] = useState({
@@ -9,6 +11,7 @@ function MatchSetupPage(props) {
         matchType: '',
         scoreboard: ''
     })
+    const navigate = useNavigate()
 
     const handleChange = (e) => {
         let value = e.target.value;
@@ -25,8 +28,7 @@ function MatchSetupPage(props) {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log(matchState);
-
+        navigate("/match")
     }
 
 
